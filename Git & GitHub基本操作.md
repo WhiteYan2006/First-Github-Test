@@ -73,3 +73,5 @@ git branch -M main
 git push -u origin main
 ```
 - push完第一次以后可以直接`git add .`然后`git commit -m "description"`再`git push`
+
+## 使用SourceTree代替复杂终端代码操作
