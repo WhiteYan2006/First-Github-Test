@@ -53,3 +53,23 @@ ssh -T git@github.com
 | 切换分支      | `git checkout 分支名`                                                                    | 从一个章节切换到另一个章节。            |
 | 合并分支      | `git merge 分支名`                                                                       | 把不同章节的内容合并到主线。            |
 | 拉取代码      | `git pull origin 分支名`                                                                 | 从远程仓库拉取最新代码。              |
+
+### …或在命令行上创建一个新的仓库
+
+```
+echo "# First-Github-Test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/WhiteYan2006/First-Github-Test.git
+git push -u origin main
+```
+### …或从命令行中推送现有的仓库
+
+```
+git remote add origin https://github.com/WhiteYan2006/First-Github-Test.git
+git branch -M main
+git push -u origin main
+```
+- push完第一次以后可以直接`git add .`然后`git commit -m "description"`再`git push`
