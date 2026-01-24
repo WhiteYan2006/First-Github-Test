@@ -72,6 +72,10 @@ git remote add origin https://github.com/WhiteYan2006/First-Github-Test.git
 git branch -M main
 git push -u origin main
 ```
+<<<<<<< HEAD
 - push完第一次以后可以直接`git add .`然后`git commit -m "description"`再`git push`
 
 ## 使用SourceTree代替复杂终端代码操作
+=======
+- push完第一次以后可以直接`git add .`然后`git commit -m "description"`再`git push`
+>>>>>>> b90d39a4499681930aaf3d476b14b8c0aa38bf2d
