@@ -76,6 +76,21 @@ git push -u origin main
 - push完第一次以后可以直接`git add .`然后`git commit -m "description"`再`git push`
 
 ## 使用SourceTree代替复杂终端代码操作
-=======
+
 - push完第一次以后可以直接`git add .`然后`git commit -m "description"`再`git push`
->>>>>>> b90d39a4499681930aaf3d476b14b8c0aa38bf2d
+
+## GitHub 和 Gitee 的核心功能详解
+
+|功能|GitHub|Gitee|
+|---|---|---|
+|Fork|复制项目到个人账户|同样支持复制项目|
+|Star|收藏项目，便于以后查找|同样支持收藏项目|
+|Watch|订阅项目动态|支持动态订阅|
+|Issues|提交问题或建议，记录开发中的待办事项|问题追踪支持更加本地化|
+|Request Pull|提交代码修改供原项目合并|类似功能|
+|Actions|自动化 CI/CD 工作流|不支持 Actions|
+|Pages|托管静态网站（如博客或文档）|提供类似功能|
+|Releases|发布稳定版本，提供下载|同样支持发布功能|
+|Webhooks|自动消息通知|支持类似功能|
+
+a
