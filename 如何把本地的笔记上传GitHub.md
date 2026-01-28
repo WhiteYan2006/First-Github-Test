@@ -45,7 +45,23 @@ git commit -m "descreption"
 git push
 ```
 
+- 如果在github上面进行更改过要先同步到本地
+```
+git pull origin main
+```
 # 遇到问题
+
+## 验证链接
+```
+# 先删除原来的HTTPS远程地址
+git remote remove origin
+
+# 添加SSH远程地址（粘贴你刚复制的地址）
+git remote add origin git@github.com:WhiteYan2006/First-Github-Test.git
+
+# 验证远程地址是否正确
+git remote -v
+```
 
 在更新 Obsidian 笔记并推送至 `First-Github-Test` 仓库时，遇到了 `non-fast-forward` 类型的推送失败错误，核心原因是**你的本地 `main` 分支提交记录落后于远程仓库的 `main` 分支**（比如你可能在 GitHub 网页上直接编辑过仓库文件、或之前推送过其他内容），Git 为了避免覆盖远程的最新内容，拒绝了这次 “非快进式” 推送。另外你看到的 `LF will be replaced by CRLF` 是换行符提示（非错误），我会先解决核心的推送报错，再解释这个警告。
 
@@ -73,11 +89,6 @@ git pull origin main
 
 ### 步骤 2：重新推送本地更新
 
-合并完成后，再次执行推送命令即可：
-
-bash
-
-运行
 
 ```
 git push
@@ -86,10 +97,6 @@ git push
 ### （可选，不推荐新手）强制推送（会覆盖远程内容）
 
 如果你确定远程仓库的最新内容是无用的，想要强制用本地内容覆盖远程（**谨慎使用，可能丢失远程数据**）：
-
-bash
-
-运行
 
 ```
 git push -f origin main
@@ -107,10 +114,6 @@ git push -f origin main
 
 如果想关闭这个警告（可选），执行以下命令：
 
-bash
-
-运行
-
 ```
 # 配置Git不自动转换换行符，仅在Windows下建议
 git config --global core.autocrlf false
@@ -119,8 +122,6 @@ git config --global core.autocrlf false
 ## 三、验证是否解决
 
 推送成功后，终端会显示类似以下内容，且 GitHub 仓库页面能看到你更新的笔记，说明问题解决：
-
-plaintext
 
 ```
 Enumerating objects: x, done.
