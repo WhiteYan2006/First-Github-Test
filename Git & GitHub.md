@@ -4,6 +4,7 @@
 - **attachments**
 
 - [[Git & GitHub基本操作]]
+- [[README]]
 
 %% End Waypoint %%
 
