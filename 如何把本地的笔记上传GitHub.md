@@ -15,7 +15,7 @@ git init
 
 - 推送至现有仓库
 ```
-git remote add origin https://github.com/WhiteYan2006/Test.git
+git remote add origin git@github.com:你的用户名/obsidian-notes.git
 ```
 
 - 改名主分支为main
@@ -37,3 +37,11 @@ git commit -m "description"
 ```
 git push -u origin main
 ```
+
+# Step 3 初始化完成后的上传
+```
+git add .
+git commit -m "descreption"
+git push
+```
+
